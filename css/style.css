@@ -1,0 +1,704 @@
+body,html{
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, serif;
+    background-color: transparent;
+    margin:0;
+    padding: 0;  
+}
+
+
+/*header desktop*/
+#desktop{
+    top:0;
+    height: 64px;
+    background-color:white;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.logo{
+    padding-left: 24px;  
+}
+
+.logo, 
+.logo-text{    
+    padding-top: 8px;
+    height: 32px;
+    float: left;
+}
+
+span{
+    color: rgb(70, 70, 70);
+    opacity: 0.5; 
+}
+
+.logo img{
+    width: 100%;  
+    height: 50px;
+}
+
+.logo-text p{
+    text-align: left;
+    font-weight: 900;
+    font-size: 26px;
+    color: rgb(70, 70, 70);
+    margin-top: 8px;
+    letter-spacing: 2px; 
+}
+
+nav{
+    padding-top: 24px;
+    padding-right: 24px;
+    float: right;
+}
+
+a{
+    color:rgb(70, 70, 70);
+    text-decoration: none;
+    margin-left:16px;
+    font-weight: 900;
+    transition-property: color;
+   transition-duration: 0.5s;
+}
+a:hover {
+    color: rgb(153, 153, 153);
+  }
+
+
+  /*header mobile*/
+#mobile{
+    display:none;
+}
+
+.logo-mobile{
+    float: left;
+    margin-left: 24px;
+}
+
+
+.mobile-nav{
+    float: right;
+    margin-right: 24px;
+    height: 32px; 
+}
+  
+  
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  
+    #desktop{
+        display: none;
+   }
+ 
+  #mobile{
+      display: block;
+      position: fixed;
+      top:0;
+      background-color:white;
+      width: 100%;
+      height: 64px;
+  }
+}
+
+
+/*banner*/
+.banner{
+    background-color: rgb(189, 189, 189);
+    display: inline-flex;
+    width: 100%;
+    margin-top: 64px;
+    height: auto;
+  }
+  
+  .banner-photo{
+      width: 60%;
+      padding-left: 24px;
+      margin-bottom: 32px;
+      margin-top:32px;
+      margin-right: 24px;
+  }
+
+  .banner-photo img{
+      width: 100%;
+      height: auto;
+  }
+
+  .banner-right-side{
+      width: 38%; 
+      padding-left: 24px;
+      display: inline-block;
+      flex-wrap: wrap;
+      margin-top: 100px;
+      text-align: left;
+      margin-right: 24px;
+      padding-bottom: 32px;
+  }
+ 
+  .banner-right-side h1{
+      font-size:50px;
+      font-weight: 900;
+      word-spacing: 3px;
+      color: rgb(70, 70, 70);
+  }
+
+  .banner-right-side p{
+      font-size: 26px;
+      word-spacing: 3px;
+      color: rgb(70, 70, 70);
+  }
+
+  .start-here{
+     background-color: rgb(94, 93, 93);
+    text-align: center;
+    width: 85%;
+    margin-top: 60px;
+    padding-top: 16px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    height: 48px;   
+}
+
+.start-here:hover{
+    background-color: rgb(70, 70, 70);
+}
+
+.start-here a{
+    text-decoration: none;
+    color: rgb(223, 223, 223);
+    font-size: 20px;  
+}
+
+
+/*banner for mobile*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .banner{
+        display: block;
+        padding-bottom: 32px;
+    }
+    
+    .banner-photo{
+        width: 100%;
+        margin: 0;
+        padding:0;
+    }
+
+    .banner-right-side{
+        width: 94%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .banner-right-side h1{
+        padding-right: 30px;
+        font-size: 46px; 
+    }
+
+    .banner-right-side p{
+        margin-top:32px;
+    }
+
+    .start-here{
+        margin-top:24px;
+        width: auto;
+        margin:0;
+        width: 100%;
+    }
+}
+
+
+/*Colmar infromations*/
+.container{
+    display: inline-flex;
+    width: 100%;
+    height: auto;
+    background-color: rgb(240, 247, 241);
+ }
+
+ .container-article{
+    width: 60%;
+    margin-left: 24px;
+    margin-bottom: 32px;
+    margin-top:32px;
+    margin-right: 24px;    
+ }
+
+ .container-article img{
+    width: 100%;
+    height: auto;
+}
+ 
+ .container-article h2{
+     font-weight: 900;
+     font-size:40px;
+     margin-left: 24px;
+     color: rgb(70, 70, 70);
+     margin-bottom:24px;
+     text-align: left;
+     margin-top: 32px;
+ }
+
+ .container-article p{
+     margin-left: 24px;
+     font-size: 16px;
+     font-weight: 600;
+     word-spacing: 3px;
+     letter-spacing: 1px;
+     padding-bottom: 32px;
+     text-align: left;
+     column-count: rgb(70, 70, 70);
+     opacity: 0.5;
+     font-style: italic;
+ }
+
+ .container-informations{
+    border-left: 1px solid rgb(189, 189, 189);
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    padding-top: 32px;
+    margin-right: 24px;
+    padding-bottom: 32px; 
+ }
+
+  .informations{
+     border-bottom: rgb(189, 189, 189) solid 3px;
+     width: 100%;
+     height: auto;
+     display: inline-flex;
+     margin-bottom: 16px;
+     padding-bottom: 16px;
+     padding-left: 24px; 
+ }
+ 
+ .information {
+     width: 35%;
+     height: auto;
+     padding-left: 0;
+     display: inline-block;
+ }
+ 
+ .information img{
+     width: 100%;
+     height: auto;  
+ }
+ 
+ .info{
+     width: 65%;
+     font-size: 12px;
+     text-align: left;
+ }
+
+.information-oliver{
+     border-bottom: rgb(189, 189, 189) solid 2px;
+     width: 100%;
+     height: auto;
+     background-color:rgb(189, 189, 189) ;
+     display: inline-flex;
+     margin-bottom: 16px;
+     padding-bottom: 16px;
+     padding-top: 16px;
+     padding-left: 24px;  
+ }
+.info h3{
+     margin-top: 50px;
+     font-size: 22px;
+     margin-left: 48px;
+     margin-right: 24px;
+     text-align: left;
+     color: rgb(70, 70, 70);
+ }
+
+ .info p{
+     font-size: 16px;
+     margin-left: 48px;
+     margin-right: 24px;
+     text-align: left;
+     color: rgb(70, 70, 70);
+ }
+
+ .info a{
+     margin-left:48px;
+     font-size:16px;
+     color: rgb(81, 81, 236);
+     transition-property: color;
+     transition-duration: 0.5s;
+     
+     
+ }
+.info a:hover{
+    color: rgb(4, 4, 131);
+}
+
+ .information-mobile{
+     display: none;
+ }
+
+/* mobile Colmar information*/
+ @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .container-article{
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container-informations{
+        width: 100%;
+        border-left: none;
+        margin:0;
+        padding: 0;
+        margin-top:16px;
+        margin-right: 12px;
+        margin-left: 12px;   
+    }
+
+    .informations{
+        display: block;
+        width: 100%;
+        background-color: rgb(240, 247, 241);
+        border-bottom: none;
+        margin:0;
+        padding: 0; 
+    }
+
+    .information{
+        display: none; 
+    }
+
+    .info{
+        width: 80%;
+        margin:0;
+        padding: 0;
+        margin-bottom:32px ;
+        margin-left: 16px;
+        padding-top: 24px;
+    }
+
+    .information-mobile{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .information-mobile img{
+        width: 100%;
+        height: auto;
+    }
+
+    .informations-oliver{
+        display: none;
+    }
+
+    .info h3{
+        margin-left:0;
+        margin-top:0;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .info p{ 
+        font-size: 18px;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .info a{
+       margin-left:0;  
+    }  
+}
+
+
+
+/*Start learning*/
+.container-learnings{
+      background-color:   rgb(189, 189, 189);
+      width: 100%;
+      padding-bottom: 32px;
+      padding-top: 32px;
+      display: inline-block;
+  }
+  
+.container-learnings h2{
+      font-size:40px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: rgb(70, 70, 70);
+  }
+  
+.container-learning{
+      display: inline-block;
+      margin-left: 80px;
+      margin-right: 70px;   
+  }
+  
+.learnings{
+      width: 100%;
+      display: inline-flex;
+      margin-top: 32px;   
+  }
+  
+  .learning{
+      width: 29%;
+      margin-left:32px;
+      background-color: rgb(240, 247, 241);
+      padding-bottom: 32px;
+  }
+  
+  .learning img{
+      width: 100%;
+      height: auto;
+      margin:0;
+      margin-bottom: 24px;
+      padding: 0;
+  }
+  
+  .learning h3{
+      color: rgb(70, 70, 70);
+      text-align: left;
+      font-size: 22px;
+      margin-left: 32px;
+     
+  }
+
+  .learning p{
+      text-align: left;
+      font-size: 16px;
+      margin-left: 32px;
+      margin-bottom: 8px;
+      margin-right: 32px;
+      color: rgb(70, 70, 70);
+      line-height: 1.6;
+      font-weight:600;
+      word-spacing: 3px;
+  }
+
+  .learning a{
+      margin-left: 0;
+  }
+
+
+
+/* Start learning mobile*/
+.learning-mobile{
+    display: none;
+}
+
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .container-learnings{
+        background-color: rgb(240, 247, 241);
+        border-top: 1px solid rgb(189, 189, 189);
+        width: 100%;
+        padding:0;
+        padding-bottom: 32px;
+        border-bottom: rgb(189, 189, 189) solid 1px;
+    }
+    
+    .container-learning{
+        height: auto;
+        padding:0;
+        margin:0;
+        width: 100%;
+    }
+
+    .learnings{
+        display: inline-block;
+        width: 95%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .learning{
+        display: flex;
+        background-color: rgb(189, 189, 189);
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-top:8px;
+    }
+    
+    .learning img{
+        display: none;
+    }
+
+    .learning p{
+        display: none;
+    }
+
+    .learning h3{
+        padding: 0;
+        margin: 0;
+        padding-top: 16px;
+        padding-bottom: 24px;
+        padding-left: 16px;
+    }
+
+    .container-learnings h2{
+        margin:0;
+        padding-bottom: 0;
+        padding-bottom: 16px;
+        padding-top: 32px;
+    }
+}
+  
+
+/*Video*/
+.container-thesis{
+    display: inline-block;
+    padding-top: 32px;
+    background-color: rgb(240, 247, 241);
+}
+
+.container-video{
+    display: inline-flex;
+}
+
+.video{
+    display: inline-block;
+    max-width: 60%;
+    margin-top: 32px;
+    margin-left:24px ;
+}
+
+.video video{
+    width: 100%;
+    height: auto;
+}
+
+.container-thesis h2{
+    text-align: left;
+    font-weight: 900;
+    font-size:40px;
+    text-align: center;
+    color:rgb(70, 70, 70);
+
+}
+
+.video h3{
+    color: rgb(70, 70, 70);
+    text-align: left;
+    font-size: 22px;
+}
+.video p{
+    text-align: left;
+    font-size: 16px;
+    margin-right: 32px;
+    color: rgb(70, 70, 70);
+    line-height: 1.6;
+    font-weight:600;
+    font-style: italic;
+    word-spacing: 3px;
+    opacity: 0.8;
+}
+
+.information-thesis{
+    width: 40%;
+    height: auto;
+    display: inline-block;
+    padding-top: 32px;
+    margin-right: 24px;
+    padding-bottom: 32px;
+}
+
+.info-thesis{
+    width: 100%;
+    height: auto;
+    padding-top: 16px;
+    display: inline-flex;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    margin-left: 24px;   
+}
+
+.thesis-photo{
+    width: 35%;
+    height: auto;
+    padding-left: 16px;
+    display: inline-block;
+}
+.thesis-photo img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*Video mobile*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .container-thesis{
+        display: block;
+        padding: 0;
+        width: 100%;
+        margin:0;
+        padding-top:32px;
+        border-bottom: rgb(189, 189, 189) solid 1px;
+        padding-bottom: 24px;
+    }
+    
+    .container-video{
+        display: block;
+        width: 100%;
+        margin:0;
+        padding-top: 0;
+        padding-top: 16px;
+    }
+    .video{
+        max-width: 100%;
+        padding:0;
+        margin: 0;
+    }
+
+    .container-thesis h2{
+        margin:0;
+        padding: 0;
+    }
+
+    .video h3{
+       display: none;  
+    }
+
+    .video p{ 
+       display: none;
+    
+    }
+    .information-thesis{
+        display: none;
+    }
+}
+
+
+/*footer*/
+footer{
+    height:64px ;
+    width: 100%;
+    
+}
+
+.left-span{
+    text-align: left;
+    float: left;
+    color:rgb(29, 29, 29);
+    margin-top: 16px;
+    margin-left: 24px;
+}
+
+.right-span{
+    float: right;
+    margin-top: 16px;
+    margin-right: 24px;
+}
+
+
+/*Footer mobile*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+.right-span{
+    display: none;
+}
+.left-span{
+    text-align: left;
+    float: left;
+    color:rgb(29, 29, 29);
+    padding-top: 16px;
+    margin-left: 24px;
+}
+}
